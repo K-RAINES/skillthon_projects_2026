@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "codexGoalMode": "aggregate",
+  "aggregateObjective": "Deliver the durable plan in .omx/ultragoal/goals.json and record checkpoints in .omx/ultragoal/ledger.jsonl.",
+  "goals": [
+    {
+      "id": "G001",
+      "title": "Plan requester AI keyword extraction",
+      "objective": "Create PRD and test-spec artifacts from the deep-interview requirements.",
+      "status": "complete",
+      "evidence": ".omx/plans/prd-requester-ai-keywords.md and .omx/plans/test-spec-requester-ai-keywords.md"
+    },
+    {
+      "id": "G002",
+      "title": "Implement requester AI keyword extraction",
+      "objective": "Add backend parser/subprocess/fallback/reranking support, prompt file, UI button, and focused tests.",
+      "status": "complete",
+      "evidence": "collaborator_agent.py, server.py, prompts/requester_keyword_extraction.md, README.md, and tests/test_collaborator_agent.py updated"
+    },
+    {
+      "id": "G003",
+      "title": "Review and QA",
+      "objective": "Run available verification, code review, and adversarial QA; fix blockers or report environment limits.",
+      "status": "complete",
+      "evidence": "Code review APPROVE, architecture CLEAR, local Codex CLI smoke passed, UltraQA report written to .omx/qa/ultraqa-requester-ai-keywords.md; Python unavailable in leader shell"
+    }
+  ]
+}
